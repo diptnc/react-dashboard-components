@@ -1,6 +1,6 @@
 {
   "name": "@diptnc/react-dashboard-components",
-  "version": "1.0.1a",
+  "version": "1.0.2",
   "description": "A collection of reusable React components",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -24,7 +24,10 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-code-blocks": "^0.1.6",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.5",

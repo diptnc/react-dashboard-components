@@ -1,14 +1,21 @@
 import React from 'react';
-  import Button from './components/Button';
-  import Input from './components/Input';
 
-  const App = () => {
-    return (
-      <div className="p-4">
-        <Button>Click Me f</Button>
-        <Input placeholder="Enter text" />
+import ButtonDemoLayout from './components/Button/ButtonDemoLayout';
+const App = () => {
+
+  return (
+    <div className="container p-4 mx-auto">
+      <div className='py-4 border-b'>
+        <h1 className='text-xl font-semibold text-slate-800'>React Components</h1>
       </div>
-    );
-  };
 
-  export default App;
+      <div className="flex flex-col space-y-4">
+        <ButtonDemoLayout />
+        
+      </div>
+
+    </div>
+  );
+};
+
+export default App;
