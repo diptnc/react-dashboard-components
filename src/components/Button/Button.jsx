@@ -1,5 +1,6 @@
 'use client'
 import React, { forwardRef } from 'react';
+import { IoIosArrowForward } from 'react-icons/io';
 import { twMerge } from 'tailwind-merge';
 
 const Button = forwardRef(
@@ -17,7 +18,7 @@ const Button = forwardRef(
     },
     ref
   ) => {
-    const baseClasses = 'flex items-center px-4 py-2 rounded transition-all group disabled:opacity-80 disabled:cursor-not-allowed';
+    const baseClasses = 'flex items-center p-4 rounded transition-all group disabled:opacity-80 disabled:cursor-not-allowed text-sm font-medium ';
     const iconBaseClasses = 'mr-2';
     const typeClasses = {
       default: 'bg-gray-800 hover:bg-gray-700 text-white border border-black hover:border-gray-900',
@@ -49,7 +50,8 @@ const Button = forwardRef(
       >
         {icon && <span className={iconClass}>{icon}</span>}
         {label}
-        {arrow && !disabled && <span className="relative ml-2 transition-all translate-x-0 group-hover:translate-x-1">→</span>}
+        {arrow && !disabled && <span className="relative ml-2 transition-all translate-x-0 group-hover:translate-x-1"><IoIosArrowForward />
+          </span>}
       </button>
     );
   }

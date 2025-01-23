@@ -11,7 +11,7 @@ const ButtonDemoLayout = () => {
         <div className='py-4 space-y-4'>
             <h3>Buttons</h3>
 
-            <CodeBlockLayout text={`import Button from '@diptnc/react-dashboard-components/Button/Button';`} />
+            <CodeBlockLayout text={`import Button from '@diptnc/react-dashboard-components';`} />
 
             <div className='pt-2'>variables colors needed in tailwind.config.js file</div>
             <CodeBlockLayout text={`colors: {
@@ -22,6 +22,8 @@ const ButtonDemoLayout = () => {
           'primary-border': '#4734EB',
           'primary-border-hover': '#6E36E5',
         }`} />
+         <div className='pt-2'>Add following in tailwind.config</div>
+         <CodeBlockLayout text={`"node_modules/@diptnc/react-dashboard-components/**/*.{js,ts,jsx,tsx,mdx}"`} />
             <h4 >Default</h4>
             <CodeBlockLayout text={`<Button label={'Test Button'} type="default" onClickFunction={buttonOnClick} className='' disabled={false} icon={null}  arrow={true}/>`} />
 
